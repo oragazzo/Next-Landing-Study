@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:css": "postcss styles/tailwind.css -o styles/main.css",
+    "build:watch": "postcss styles/tailwind.css -o styles/main.css --watch",
+    "prod:build": "NODE_ENV=production yarn run build:css && yarn run build"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "babel-preset-next": "^1.4.0",
+    "jquery": "^3.6.0",
+    "next": "12.1.3",
+    "next-seo": "^5.3.0",
+    "next-themes": "^0.1.1",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-switch": "^6.0.0",
+    "styled-components": "^5.3.5",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.3",
+    "sass": "^1.49.10"
+  }
+}
